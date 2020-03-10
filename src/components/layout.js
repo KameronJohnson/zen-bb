@@ -15,10 +15,10 @@ import "./layout.css"
 import Navbar from './globals/Navbar'
 
 const Layout = ({ children }) => (
-  <>
-  <Navbar />
-  {children}
-  </>
+  <div className="main-wrapper">
+    <Navbar />
+    {children}
+  </div>
 )
 
 

@@ -34,7 +34,7 @@ export default class Navbar extends Component {
 
 	render() {
 		return (
-			<nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+			<nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top navbar-custom">
 				<button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
 					<span className="navbar-toggler-icon bg-dark"/>
 				</button>
@@ -42,11 +42,11 @@ export default class Navbar extends Component {
 					<ul className="navbar-nav mx-auto">
 						{this.state.links.map((link) => (
 							<li className="nav-item" key={link.id}>
-								<Link to={link.path} className="nav-link text-capitalize">{link.text}</Link>
+								<Link to={link.path} className="nav-link nav-link-custom text-capitalize">{link.text}</Link>
 							</li>
 						))}
-						<li className="nav-item ml-sm-5">
-							<FaCartArrowDown className="cart-icon" />
+						<li className="nav-item ml-sm-3">
+							<FaCartArrowDown className="cart-icon nav-link-custom" />
 						</li>
 					</ul>
 				</div>

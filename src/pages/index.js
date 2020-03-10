@@ -9,10 +9,15 @@ import zenFrog from '../images/zen-frog.png'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1 className="tagline">Zen Bodybuilding</h1>
-    <div className="d-flex justify-content-center">
-      <img src={zenFrog} className="zen-frog"></img>
-    </div>
+    <section className="hero">
+      <div class="center-content">
+        <h1 className="tagline">Zen Bodybuilding</h1>
+        <div className="d-flex justify-content-center">
+          <img src={zenFrog} className="zen-frog"></img>
+        </div>
+        <a className="button">Some Action</a>
+      </div>
+    </section>
   </Layout>
 )
 
