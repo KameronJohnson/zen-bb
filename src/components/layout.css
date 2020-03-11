@@ -82,6 +82,13 @@ section.info {
     padding: 3rem 0;
 }
 
+section.contact {
+    background-color: var(--mainGray);
+    background-size: cover;
+    width: 100wh;
+    padding: 3rem 0;
+}
+
 .center-content {
     width: 40rem;
     max-width: 100%;
@@ -140,7 +147,14 @@ section.info {
     margin-top: 1.5rem;
 }
 
-.button.product-button:focus {
+.button.form-button {
+    background-color: var(--mainGreen);
+    border: 1px solid #1ACC39;
+    margin-top: 1.5rem;
+}
+
+.button.product-button:focus,
+.button.form-button:focus {
     outline: none;
 }
 

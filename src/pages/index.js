@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Hero from "../components/Home/Hero"
 import Info from "../components/Home/Info"
 import Products from "../components/Home/Products"
+import Contact from "../components/Home/Contact"
 import Footer from "../components/Shared/Footer"
 
 const IndexPage = () => (
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <Hero />
     <Products />
     <Info />
+    <Contact />
     <Footer />
   </Layout>
 )
