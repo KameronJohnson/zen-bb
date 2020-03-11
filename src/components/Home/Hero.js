@@ -9,9 +9,9 @@ export default function Hero() {
 			<div class="center-content">
 				<h1 className="tagline">Zen Bodybuilding</h1>
 				<div className="d-flex justify-content-center">
-					<img src={zenFrog} className="zen-frog"></img>
+					<img src={zenFrog} className="zen-frog" alt="logo"></img>
 				</div>
-				<a className="button">Hero Button</a>
+				<Link className="button">Hero Button</Link>
 			</div>
 		</section>
 	)

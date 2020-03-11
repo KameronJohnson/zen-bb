@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 export default function Hero() {
 	return (
@@ -8,7 +9,7 @@ export default function Hero() {
 				<div className="d-flex justify-content-center">
 					About page
 				</div>
-				<a className="button">Hero Button</a>
+				<Link className="button">Hero Button</Link>
 			</div>
 		</section>
 	)

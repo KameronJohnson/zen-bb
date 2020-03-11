@@ -7,12 +7,11 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import "../lib/bootstrap.min.css"
 import "./layout.css"
 
-import Navbar from './Globals/Navbar'
+import Navbar from './Shared/Navbar'
 
 const Layout = ({ children }) => (
   <div className="main-wrapper">
