@@ -42,7 +42,7 @@ export default class Navbar extends Component {
 					<ul className="navbar-nav mx-auto">
 						{this.state.links.map((link) => (
 							<li className="nav-item" key={link.id}>
-								<Link to={link.path} className="nav-link nav-link-custom text-capitalize">{link.text}</Link>
+								<Link to={link.path} className="nav-link nav-link-custom text-uppercase">{link.text}</Link>
 							</li>
 						))}
 						<li className="nav-item ml-sm-3">

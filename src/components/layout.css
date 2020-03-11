@@ -55,8 +55,7 @@ h1.tagline {
     text-align: center;
     margin-top: 4rem;
     letter-spacing: .25rem;
-
-    /* text-shadow: 2px 2px 7px rgba(255, 255, 255, 0.95); */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .cart-icon {
