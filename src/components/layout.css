@@ -27,11 +27,11 @@ body {
 }
 
 .bg-gray {
-    color: var(--mainGray);
+    background: var(--mainGray);
 }
 
 .bg-dark {
-    color: var(--mainDark) !important;
+    background: var(--mainDark) !important;
 }
 
 .main-wrapper .navbar-custom .nav-link-custom {
@@ -44,6 +44,8 @@ body {
 
 .zen-frog {
     width: 500px;
+    max-width: 100%;
+    height: auto;
 }
 
 h1.tagline {
@@ -83,6 +85,7 @@ section.info {
 
 .center-content {
     width: 40rem;
+    max-width: 100%;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -102,6 +105,12 @@ section.info {
     font-size: 3em;
     margin-bottom: 0;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .center-content h1 {
+        font-size: 1.5rem;
+    }
 }
 
 .center-content h3 {
@@ -124,4 +133,8 @@ section.info {
     border-color: rgba(255, 255, 255, 0.7);
     color: var(--mainWhite);
     cursor: pointer;
+}
+
+footer {
+    color: var(--mainWhite);
 }
