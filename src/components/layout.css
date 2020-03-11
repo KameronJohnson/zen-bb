@@ -4,7 +4,7 @@
 }
 
 :root {
-    --mainGreen: #99ff99;
+    --mainGreen: #4DFF6C;
     --mainYellow: #ffff99;
     --mainGray: #ece8dc;
     --mainWhite: #ffe;
@@ -14,7 +14,6 @@
 }
 
 body {
-    background: var(--mainLightBlue);
     color: var(--mainDark);
     font-family: 'Open Sans Condensed', sans-serif !important;
 }
@@ -64,14 +63,22 @@ h1.tagline {
     font-size: 2rem;
 }
 
-.hero {
+section.hero {
     /* background-image: url("https://unsplash.it/1500?random"); */
+    background-color: var(--mainLightBlue);
     background-size: cover;
     background-position: center;
     width: 100wh;
     height: 100vh;
     display: -webkit-box;
     display: flex;
+}
+
+section.info {
+    background-color: var(--mainGreen);
+    background-size: cover;
+    width: 100wh;
+    padding: 3rem 0;
 }
 
 .center-content {
@@ -109,11 +116,12 @@ h1.tagline {
     padding: 20px;
     border: 1px solid var(--mainWhite);
     text-decoration: none;
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .button:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.7);
     color: var(--mainWhite);
-    cursor: pointer
+    cursor: pointer;
 }
