@@ -134,6 +134,22 @@ section.info {
     cursor: pointer;
 }
 
+.button.product-button {
+    background-color: var(--mainLightBlue);
+    border: 1px solid #00B2CC;
+    margin-top: 1.5rem;
+}
+
+.button.product-button:focus {
+    outline: none;
+}
+
 footer {
     color: var(--mainWhite);
+}
+
+.product-image {
+    max-width: 350px;
+    width: 100%;
+    margin: 2rem auto;
 }
