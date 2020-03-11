@@ -42,10 +42,12 @@ body {
     color: var(--mainGreen);
 }
 
+.main-wrapper button:focus {
+    outline: none;
+}
+
 .zen-frog {
-    max-width: 500px;
-    width: 100%;
-    height: auto;
+    width: 500px;
 }
 
 h1.tagline {
@@ -69,10 +71,17 @@ section.hero {
     background-color: var(--mainLightBlue);
     background-size: cover;
     background-position: center;
-    width: 100wh;
+    width: 100%;
     height: 100vh;
+    min-height: 100%;
     display: -webkit-box;
     display: flex;
+}
+
+@media only screen and (orientation: landscape) and (max-width: 812px) {
+    section.hero {
+        min-height: 100vw;
+    }
 }
 
 section.info {
@@ -80,6 +89,7 @@ section.info {
     background-size: cover;
     width: 100wh;
     padding: 3rem 0;
+    color: var(--mainWhite);
 }
 
 section.contact {
@@ -87,11 +97,21 @@ section.contact {
     background-size: cover;
     width: 100wh;
     padding: 3rem 0;
+    overflow: hidden;
+}
+
+section.contact .form-control {
+    border-radius: 0;
+}
+
+section.contact .form-control:focus {
+    border-color: var(--mainGreen);
+    box-shadow: none;
 }
 
 .center-content {
-    width: 40rem;
-    max-width: 100%;
+    width: 100%;
+    max-width: 40rem;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -99,7 +119,7 @@ section.contact {
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    margin: auto;
+    margin: 4rem auto 0;
 }
 
 .center-content h1, .center-content h3 {

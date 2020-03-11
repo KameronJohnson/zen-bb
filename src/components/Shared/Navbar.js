@@ -22,21 +22,21 @@ export default class Navbar extends Component {
 
 	navbarHandler = () => {
 		this.state.navbarOpen ? this.setState({
-				navbarOpen: false,
-				css: "collapse navbar-collapse"
-			}
+			navbarOpen: false,
+			css: "collapse navbar-collapse"
+		}
 		) : this.setState({
-				navbarOpen: true,
-				css: "collapse navbar-collapse show"
-			}
+			navbarOpen: true,
+			css: "collapse navbar-collapse show"
+		}
 		)
 	}
 
 	render() {
 		return (
-			<nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top navbar-custom">
+			<nav className="navbar navbar-expand-sm navbar-dark bg-dark navbar-custom fixed-top">
 				<button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
-					<span className="navbar-toggler-icon bg-dark"/>
+					<span className="navbar-toggler-icon" />
 				</button>
 				<div className={this.state.css}>
 					<ul className="navbar-nav mx-auto">
